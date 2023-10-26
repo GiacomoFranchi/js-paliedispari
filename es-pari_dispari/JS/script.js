@@ -21,8 +21,9 @@ document.getElementById("start").addEventListener('click', function(){
     //Controllo numero
     if (userNum < 1 || userNum > 5 ){
         alert("DA 1 A 5!")
+        num.value = "";
         //Cancellare numero in input??
-    } 
+    }
 
     // Somma numeri
      let sommaNum = userNum + pcNum;
@@ -36,7 +37,7 @@ document.getElementById("start").addEventListener('click', function(){
     //OUTPUT
     risp.innerHTML = `Il tuo numero è ${userNum} il mio numero è ${pcNum} 
     la somma dei due fa ${sommaNum}`
-    risult.innerHTML = " IO HO" + msgFin; 
+    risult.innerHTML = " IL COMPUTER HA" + msgFin; 
 })
 
 // CLick su cancel
@@ -75,6 +76,7 @@ document.getElementById("start").addEventListener('click', function(){
     //Controllo numero
     if (userNum < 1 || userNum > 5 ){
         alert("DA 1 A 5!")
+        num.value = "";
         //Cancellare numero in input??
     } 
 
