@@ -30,17 +30,13 @@ document.getElementById("start").addEventListener('click', function(){
     
 
     // Controllo pari/dispari
-    let msg = "HAI PERSO"
-    if (sommaNum % 2 == 0 ) {
-        msg = "HAI VINTO"
-
-    }
-    console.log(msg);
+    let msgFin = pariDispari (sommaNum)
+    console.log(msgFin);
 
     //OUTPUT
     risp.innerHTML = `Il tuo numero è ${userNum} il mio numero è ${pcNum} 
     la somma dei due fa ${sommaNum}`
-    risult.innerHTML = msg
+    risult.innerHTML = " IO HO" + msgFin; 
 })
 
 // CLick su cancel
@@ -86,20 +82,15 @@ document.getElementById("start").addEventListener('click', function(){
      let sommaNum = userNum + pcNum;
     console.log(sommaNum);
     
-
-    // Controllo pari/dispari
-    let msg = "HAI VINTO"
-    if (sommaNum % 2 == 0 ) {
-        msg = "HAI PERSO"
-
-    }
-    console.log(msg);
+    // controllo pari dispari
+    let msgFin = pariDispari (sommaNum)
+    console.log(msgFin);
+    
 
     //OUTPUT
     risp.innerHTML = `Il tuo numero è ${userNum} il mio numero è ${pcNum} 
     la somma dei due fa ${sommaNum}`
-    risult.innerHTML = msg
-})
+    risult.innerHTML = " TU HAI" + msgFin; 
 
 // CLick su cancel
 document.getElementById("cancel").addEventListener('click', function(){
@@ -114,8 +105,7 @@ document.getElementById("cancel").addEventListener('click', function(){
     risult.innerHTML = "";
 })
 })
-
-
+})
 
 
 // FUNZIONI
@@ -123,4 +113,14 @@ function numRandGen (numMin, numMax) {
     pcNum = Math.floor(Math.random() * (numMax - numMin +1) ) + numMin;
 console.log(pcNum);
 return pcNum; 
+}
+
+
+function pariDispari (sommaNum){
+    let msg = " VINTO"
+    if (sommaNum % 2 == 0 ) {
+        msg = " PERSO"
+    }
+    console.log("aaa", msg);
+    return msg;
 }
