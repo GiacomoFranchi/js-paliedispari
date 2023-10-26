@@ -3,3 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: lightsalmon;
+    padding: 30px;
+}
+
+.scelte, .risp{
+    width: 70%;
+    margin: 0 auto;
+    background-color: orange;
+    text-align: center;
+    padding: 1rem;
+}
+
+.centr{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+input{
+    width: 300px;
+    margin: 1rem auto;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    
+}
+
+p{
+  font-size: 2rem; 
+  font-weight: bold; 
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: red;
+}
