@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightskyblue;
+    padding: 2rem;
+}
+
+.box-lab, .box-btn{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.box-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    gap: 1rem;
+}
+label{
+    font-size: 1.5rem;
+}
+
+p{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
